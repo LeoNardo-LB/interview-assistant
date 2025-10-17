@@ -7,6 +7,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StreamOperations;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import org.ssm.aiagent.repository.LogRepository;
@@ -22,6 +23,7 @@ import java.time.Duration;
  */
 @Slf4j
 @RestController
+@RequestMapping("test/agent")
 public class TestAgentController extends TestController {
 
     private final AgentSseService               agentSseService;
@@ -33,12 +35,12 @@ public class TestAgentController extends TestController {
         this.redisTemplate = redisTemplate;
     }
 
-    @GetMapping("agent/get/{sessionId}")
+    @GetMapping("get/{sessionId}")
     public SseEmitter test(@PathVariable String sessionId) {
         return agentSseService.handleConnection(sessionId);
     }
 
-    @GetMapping("agent/generate/{key}/{cycleCount}")
+    @GetMapping("generate/{key}/{cycleCount}")
     public boolean generate(@PathVariable String key, @PathVariable Integer cycleCount) {
         new Thread(() -> {
             JSONObject jsonObject = new JSONObject();

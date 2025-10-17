@@ -32,3 +32,8 @@ replay_pid*
 *.iml
 out
 gen
+
+
+/target/
+/data_h2/
+/logs/
