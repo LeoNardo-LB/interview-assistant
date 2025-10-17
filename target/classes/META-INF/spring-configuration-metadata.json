@@ -1,0 +1,125 @@
+{
+  "groups": [
+    {
+      "name": "ai",
+      "type": "org.ssm.aiagent.config.AiProperties",
+      "sourceType": "org.ssm.aiagent.config.AiProperties"
+    },
+    {
+      "name": "ai.global",
+      "type": "org.ssm.aiagent.config.AiProperties$GlobalConfig",
+      "sourceType": "org.ssm.aiagent.config.AiProperties"
+    },
+    {
+      "name": "ai.reason",
+      "type": "org.ssm.aiagent.config.AiProperties$ReasonConfig",
+      "sourceType": "org.ssm.aiagent.config.AiProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ai.global.apikey",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.base-url",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.frequency-penalty",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.max-tokens",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.model",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.presence-penalty",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.temperature",
+      "type": "java.lang.Double",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.global.top-p",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$GlobalConfig"
+    },
+    {
+      "name": "ai.reason.apikey",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.base-url",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.frequency-penalty",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.max-tokens",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.model",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.presence-penalty",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.temperature",
+      "type": "java.lang.Double",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    },
+    {
+      "name": "ai.reason.top-p",
+      "type": "java.lang.String",
+      "sourceType": "org.ssm.aiagent.config.AiProperties$ReasonConfig"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
