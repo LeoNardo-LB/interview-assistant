@@ -17,12 +17,6 @@ import java.time.Duration;
 @Configuration
 public class RedisConfig {
     
-    private static final String STREAM_KEY = "ai-responses-stream";
-    
-    private static final String CONSUMER_GROUP = "sse-service-group";
-    
-    private static final String CONSUMER_NAME = "consumer-1";
-    
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
