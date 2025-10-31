@@ -16,7 +16,7 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
-@Table(name = "log")
+@Table(name = "`log`")
 public class LogDO extends BaseDO {
 
     private String biz;

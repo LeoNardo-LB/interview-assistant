@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
-import org.ssm.aiagent.repository.LogRepository;
 import org.ssm.aiagent.service.AgentSseService;
 
 import java.time.Duration;
@@ -24,13 +23,12 @@ import java.time.Duration;
 @Slf4j
 @RestController
 @RequestMapping("test/agent")
-public class TestAgentController extends TestController {
+public class TestAgentController {
 
     private final AgentSseService               agentSseService;
     private final RedisTemplate<String, Object> redisTemplate;
 
-    public TestAgentController(AgentSseService agentSseService, RedisTemplate<String, Object> redisTemplate, LogRepository logRepository) {
-        super(logRepository);
+    public TestAgentController(AgentSseService agentSseService, RedisTemplate<String, Object> redisTemplate) {
         this.agentSseService = agentSseService;
         this.redisTemplate = redisTemplate;
     }
